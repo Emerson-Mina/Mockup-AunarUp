@@ -1,0 +1,236 @@
+/* Estilos globales para resetear márgenes y padding */
+* {
+    margin: 0; /* Eliminar márgenes */
+    padding: 0; /* Eliminar padding */
+    box-sizing: border-box; /* Incluir padding y border en el tamaño total */
+    font-family: 'Inter', sans-serif; /* Fuente predeterminada */
+}
+
+body {
+    background-color: white; /* Color de fondo del cuerpo */
+    margin: 0; /* Eliminar márgenes del body para que el pie de página se adhiera a la parte inferior */
+    display: flex; /* Usar flexbox para alinear el contenido */
+    flex-direction: column; /* Dirección de la columna */
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #1e6af7; /* Color de fondo del encabezado */
+    height: 70px; /* Altura fija del encabezado */
+    padding: 0 20px; /* Relleno lateral, sin relleno superior e inferior */
+    display: flex; /* Usar flexbox para el layout */
+    justify-content: space-between; /* Espacio entre los elementos */
+    align-items: center; /* Centrar elementos verticalmente */
+    border-bottom: 10px solid #a1c0fa;
+    border-radius:  0 0 5px 5px;
+}
+
+.header-container {
+    display: flex; /* Usar flexbox para el contenedor del encabezado */
+    justify-content: space-between; /* Espacio entre los elementos */
+    width: 100%; /* Ocupa el 100% del ancho */
+    align-items: center; /* Alinear verticalmente los elementos */
+}
+
+/* Estilo para el logo */
+.header-logo {
+    max-width: 100px; /* Ancho máximo del logo */
+    height: auto; /* Mantener proporción */
+    padding: 4px;
+}
+
+.header-links a {
+    color: white; /* Color del texto del enlace */
+    font-size: 16px; /* Tamaño de la fuente del enlace */
+    text-decoration: none; /* Sin subrayado en el enlace */
+    font-weight: bold; /* Texto en negrita */
+}
+
+.header-links a:hover {
+    text-decoration: underline; /* Subrayar al pasar el ratón */
+}
+
+/* Contenedor principal que alberga las secciones */
+.container {
+    display: flex; /* Usar flexbox para el layout */
+    justify-content: space-between; /* Espacio entre las secciones */
+    width: 100%; /* Ocupa el 100% del ancho */
+    height: calc(100vh - 160px); /* Altura calculada, restando el espacio del header y footer */
+}
+
+/* Sección izquierda */
+.left-section {
+    width: 60%; /* Ancho de la sección izquierda */
+    background-color: white; /* Color de fondo de la sección */
+    display: flex; /* Usar flexbox para el layout */
+    justify-content: center; /* Centrar contenido verticalmente */
+    align-items: center; /* Centrar contenido horizontalmente */
+    padding: 20px; /* Relleno interno de la sección */
+    height: 100%; /* Asegúrate de que el contenedor ocupe el 100% de la altura disponible */
+
+}
+
+/* Logo de la sección izquierda */
+.left-section .logo {
+    width: 600px; /* Ancho del logo */
+    margin-left: 20px;
+}
+
+/* Sección derecha */
+.right-section {
+    width: 40%; /* Ancho de la sección derecha */
+    background-color: white; /* Color de fondo gris claro de la sección */
+    display: flex; /* Usar flexbox para el layout */
+    flex-direction: column; /* Dirección de la columna */
+    justify-content: center; /* Centrar contenido verticalmente */
+    align-items: center; /* Centrar contenido horizontalmente */
+    padding:20px; /* Relleno interno de la sección */
+}
+
+/* Estilos para el formulario */
+form {
+    display: flex; /* Usar flexbox para el formulario */
+    flex-direction: column; /* Dirección de la columna */
+    width: 90%; /* Ancho del formulario */
+    height: 1000px; /* Altura fija del formulario (ajusta según sea necesario) */
+    background-color: #ccdeff; /* Fondo blanco para el formulario */
+    padding: 20px; /* Relleno interno del formulario */
+    border-radius: 10px; /* Bordes redondeados en el formulario */
+    overflow: auto; /* Añadir scroll si el contenido excede la altura */
+    margin: 20px auto; /* Margen superior e inferior de 20px, centrado horizontalmente */
+    margin: 5px 10px 20px; /* Margen superior 20px, derecho 0px, inferior 20px, izquierdo 50px */
+
+}
+
+
+/* Encabezado y párrafo de la sección derecha */
+.right-section h2 {
+    text-align: center; /* Centrar el texto del encabezado */
+    font-size: 40px; /* Tamaño del encabezado */
+    color: #006de2; /* Color del texto del encabezado */    
+    margin-bottom: 10px; /* Espacio debajo del párrafo */
+
+}
+
+.right-section p {
+    text-align: center; /* Centrar el texto del encabezado */
+    font-size: 15px; /* Tamaño del párrafo */
+    color: #4d87f3; /* Color del texto del párrafo */
+    margin-bottom: 20px; /* Espacio debajo del párrafo */
+    font-weight: bold; /* Texto en negrita */
+
+}
+
+/* Estilos para las etiquetas */
+label {
+    font-size: 15px; /* Tamaño de la fuente de la etiqueta */
+    margin-bottom: 10px; /* Espacio debajo de la etiqueta */
+    color: #000000; /* Color del texto de la etiqueta */
+    margin-left: 26px; /* Añade margen de 10px a la izquierda */
+    font-weight: bold; /* Texto en negrita */
+}
+
+/* Estilos para los campos de entrada */
+input {
+    padding: 10px; /* Relleno interno del campo */
+    margin-bottom: 6px; /* Espacio debajo del campo */
+    border-radius: 5px; /* Esquinas redondeadas */
+    border: 1px solid #ccc; /* Borde del campo */
+    width: 100%; /* Ocupa el 100% del contenedor padre */
+    max-width: 370px; /* Ancho máximo para reducir el tamaño */
+    box-sizing: border-box; /* Asegura que padding y borde se incluyan en el ancho */
+    margin-left: 20px; /* Añade margen de 10px a la izquierda */
+    
+}
+
+
+button {
+    padding: 12px 12px; /* Relleno del botón */
+    background-color: #007bff; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 8px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar cursor */
+    width: 300px; /* Ancho fijo para el botón */
+    max-width: 100%; /* Evitar que crezca más allá del 100% del contenedor */
+    align-self: center; /* Centrar el botón dentro del formulario */
+    font-size: 25px; /* Tamaño más grande de la fuente */
+    font-weight: bold; /* Texto en negrita */
+}
+
+button:hover {
+    background-color: #0056b3; /* Color de fondo del botón al pasar el ratón */
+}
+
+.forgot-password-container {
+    text-align: right; /* Alinea el contenido del contenedor a la derecha */
+    margin-right: 25px; /* Añade margen de 10px a la izquierda */
+    margin-bottom: 10px; /* Espacio debajo del campo */
+
+
+}
+
+.forgot-password {
+    font-size: 14px; /* Tamaño de la fuente del enlace */
+    color: #4d87f3; /* Color del texto del enlace */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: bold; /* Texto en negrita */
+
+}
+
+.forgot-password:hover {
+    text-decoration: underline; /* Subrayar al pasar el ratón */
+}
+/* Pie de página */
+footer {
+    background-color: #1e6af7; /* Color de fondo del pie de página */
+    color: white; /* Color del texto del pie de página */
+    padding: 10px 0;
+    width: 100%;
+    position: fixed; /* Posicionar el pie de página siempre en la parte inferior */
+    bottom: 0; /* Alinearlo en la parte inferior */
+    left: 0; /* Alinearlo a la izquierda */
+    border-top: 10px solid #a1c0fa;
+    border-radius: 5px 5px 0 0;
+}
+/* Contenedor del pie de págia */
+.footer-container {
+    display: flex; /* Usar flexbox para el layout */
+    justify-content: space-between; /* Espacio entre los lados */
+}
+.footer-left {
+    flex-direction: column;
+    align-items: center; /* Centrar horizontalmente */
+}
+/* Aplicar negrita al título */
+.footer-left h2 {
+    margin-left: 40px;
+    font-weight: bold; /* Aplicar negrita */
+    margin-bottom: 10px; /* Espacio inferior para separar del párrafo */
+}
+/* Estilo para el párrafo */
+.footer-left p {
+    margin-left: 60px;
+}
+/* Contenedor de los iconos de redes sociales */
+.footer-right {
+    display: flex; /* Usar flexbox para el layout */
+    flex-direction: column; /* Colocar los elementos en columna */
+    align-items: center; /* Centrar horizontalmente */
+    width: 600px; /* Definir el ancho del contenedor, ajústalo según tus necesidades */
+}
+.social-media a {
+    color: white;
+    margin: 0 4px; /* Mantener margen entre iconos */
+    text-decoration: none;
+    font-size: 28px; /* Aumentar tamaño de los iconos */
+}
+
+/* Línea divisoria entre los iconos de redes sociales y el texto */
+.divider {
+    border: none;
+    border-top: 1px solid #ccc; /* Mantener línea delgada */
+    width: 50%; /* Ajustar ancho de la línea */
+    margin: 10px auto; /* Centrar la línea */
+}
+
