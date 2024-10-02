@@ -1,0 +1,108 @@
+/* Estilos globales para resetear márgenes y padding */
+* {
+    margin: 0; /* Eliminar márgenes */
+    padding: 0; /* Eliminar padding */
+    box-sizing: border-box; /* Incluir padding y border en el tamaño total */
+    font-family: 'Inter', sans-serif; /* Fuente predeterminada */
+}
+
+body {
+    background-color: white; /* Color de fondo del cuerpo */
+    margin: 0; /* Eliminar márgenes del body para que el pie de página se adhiera a la parte inferior */
+    display: flex; /* Usar flexbox para alinear el contenido */
+    flex-direction: column; /* Dirección de la columna */
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #1e6af7; /* Color de fondo del encabezado */
+    height: 70px; /* Altura fija del encabezado */
+    padding: 0 20px; /* Relleno lateral, sin relleno superior e inferior */
+    display: flex; /* Usar flexbox para el layout */
+    justify-content: space-between; /* Espacio entre los elementos */
+    align-items: center; /* Centrar elementos verticalmente */
+    border-bottom: 10px solid #a1c0fa;
+    border-radius:  0 0 5px 5px;
+}
+
+.contenedor-cabecera{
+    display: flex; /* Usar flexbox para el contenedor del encabezado */
+    justify-content: space-between; /* Espacio entre los elementos */
+    width: 100%; /* Ocupa el 100% del ancho */
+    align-items: center; /* Alinear verticalmente los elementos */
+}
+
+/* Estilo para el logo */
+.logo-cabecera {
+    max-width: 100px; /* Ancho máximo del logo */
+    height: auto; /* Mantener proporción */
+    padding: 4px;
+}
+
+.enlaces-cabecera a {
+    color: white; /* Color del texto del enlace */
+    font-size: 16px; /* Tamaño de la fuente del enlace */
+    text-decoration: none; /* Sin subrayado en el enlace */
+    font-weight: bold; /* Texto en negrita */
+}
+
+.enlaces-cabecera a:hover {
+    text-decoration: underline; /* Subrayar al pasar el ratón */
+}
+
+
+
+
+/* Pie de página */
+footer {
+    background-color: #1e6af7; /* Color de fondo del pie de página */
+    color: white; /* Color del texto del pie de página */
+    padding: 10px 0;
+    width: 100%;
+    position: fixed; /* Posicionar el pie de página siempre en la parte inferior */
+    bottom: 0; /* Alinearlo en la parte inferior */
+    left: 0; /* Alinearlo a la izquierda */
+    border-top: 10px solid #a1c0fa;
+    border-radius: 5px 5px 0 0;
+}
+/* Contenedor del pie de págia */
+.contenedor-pie {
+    display: flex; /* Usar flexbox para el layout */
+    justify-content: space-between; /* Espacio entre los lados */
+}
+.pie-izquierda {
+    flex-direction: column;
+    align-items: center; /* Centrar horizontalmente */
+}
+/* Aplicar negrita al título */
+.pie-izquierda h2 {
+    margin-left: 40px;
+    font-weight: bold; /* Aplicar negrita */
+    margin-bottom: 10px; /* Espacio inferior para separar del párrafo */
+}
+/* Estilo para el párrafo */
+.pie-izquierda p {
+    margin-left: 60px;
+}
+/* Contenedor de los iconos de redes sociales */
+.pie-derecha {
+    display: flex; /* Usar flexbox para el layout */
+    flex-direction: column; /* Colocar los elementos en columna */
+    align-items: center; /* Centrar horizontalmente */
+    width: 600px; /* Definir el ancho del contenedor, ajústalo según tus necesidades */
+}
+.redes-sociales a {
+    color: white;
+    margin: 0 4px; /* Mantener margen entre iconos */
+    text-decoration: none;
+    font-size: 28px; /* Aumentar tamaño de los iconos */
+}
+
+/* Línea divisoria entre los iconos de redes sociales y el texto */
+.divisor {
+    border: none;
+    border-top: 1px solid #ccc; /* Mantener línea delgada */
+    width: 50%; /* Ajustar ancho de la línea */
+    margin: 10px auto; /* Centrar la línea */
+}
+
