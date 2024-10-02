@@ -25,7 +25,7 @@ header {
     border-radius:  0 0 5px 5px;
 }
 
-.header-container {
+.contenedor-cabecera{
     display: flex; /* Usar flexbox para el contenedor del encabezado */
     justify-content: space-between; /* Espacio entre los elementos */
     width: 100%; /* Ocupa el 100% del ancho */
@@ -33,25 +33,25 @@ header {
 }
 
 /* Estilo para el logo */
-.header-logo {
+.logo-cabecera {
     max-width: 100px; /* Ancho máximo del logo */
     height: auto; /* Mantener proporción */
     padding: 4px;
 }
 
-.header-links a {
+.enlaces-cabecera a {
     color: white; /* Color del texto del enlace */
     font-size: 16px; /* Tamaño de la fuente del enlace */
     text-decoration: none; /* Sin subrayado en el enlace */
     font-weight: bold; /* Texto en negrita */
 }
 
-.header-links a:hover {
+.enlaces-cabecera a:hover {
     text-decoration: underline; /* Subrayar al pasar el ratón */
 }
 
 /* Contenedor principal que alberga las secciones */
-.container {
+.contenedor {
     display: flex; /* Usar flexbox para el layout */
     justify-content: space-between; /* Espacio entre las secciones */
     width: 100%; /* Ocupa el 100% del ancho */
@@ -59,7 +59,7 @@ header {
 }
 
 /* Sección izquierda */
-.left-section {
+.seccion-izquierda {
     width: 60%; /* Ancho de la sección izquierda */
     background-color: white; /* Color de fondo de la sección */
     display: flex; /* Usar flexbox para el layout */
@@ -71,13 +71,13 @@ header {
 }
 
 /* Logo de la sección izquierda */
-.left-section .logo {
+.seccion-izquierda .logo {
     width: 600px; /* Ancho del logo */
     margin-left: 20px;
 }
 
 /* Sección derecha */
-.right-section {
+.seccion-derecha {
     width: 40%; /* Ancho de la sección derecha */
     background-color: white; /* Color de fondo gris claro de la sección */
     display: flex; /* Usar flexbox para el layout */
@@ -104,7 +104,7 @@ form {
 
 
 /* Encabezado y párrafo de la sección derecha */
-.right-section h2 {
+.seccion-derecha h2 {
     text-align: center; /* Centrar el texto del encabezado */
     font-size: 40px; /* Tamaño del encabezado */
     color: #006de2; /* Color del texto del encabezado */    
@@ -112,7 +112,7 @@ form {
 
 }
 
-.right-section p {
+.seccion-derecha p {
     text-align: center; /* Centrar el texto del encabezado */
     font-size: 15px; /* Tamaño del párrafo */
     color: #4d87f3; /* Color del texto del párrafo */
@@ -162,7 +162,7 @@ button:hover {
     background-color: #0056b3; /* Color de fondo del botón al pasar el ratón */
 }
 
-.forgot-password-container {
+.contenedor-contraseña-olvidada {
     text-align: right; /* Alinea el contenido del contenedor a la derecha */
     margin-right: 25px; /* Añade margen de 10px a la izquierda */
     margin-bottom: 10px; /* Espacio debajo del campo */
@@ -170,7 +170,7 @@ button:hover {
 
 }
 
-.forgot-password {
+.contraseña-olvidada{
     font-size: 14px; /* Tamaño de la fuente del enlace */
     color: #4d87f3; /* Color del texto del enlace */
     text-decoration: none; /* Sin subrayado */
@@ -178,7 +178,7 @@ button:hover {
 
 }
 
-.forgot-password:hover {
+.contenedor-pie:hover {
     text-decoration: underline; /* Subrayar al pasar el ratón */
 }
 /* Pie de página */
@@ -194,32 +194,32 @@ footer {
     border-radius: 5px 5px 0 0;
 }
 /* Contenedor del pie de págia */
-.footer-container {
+.contenedor-pie {
     display: flex; /* Usar flexbox para el layout */
     justify-content: space-between; /* Espacio entre los lados */
 }
-.footer-left {
+.pie-izquierda {
     flex-direction: column;
     align-items: center; /* Centrar horizontalmente */
 }
 /* Aplicar negrita al título */
-.footer-left h2 {
+.pie-izquierda h2 {
     margin-left: 40px;
     font-weight: bold; /* Aplicar negrita */
     margin-bottom: 10px; /* Espacio inferior para separar del párrafo */
 }
 /* Estilo para el párrafo */
-.footer-left p {
+.pie-izquierda p {
     margin-left: 60px;
 }
 /* Contenedor de los iconos de redes sociales */
-.footer-right {
+.pie-derecha {
     display: flex; /* Usar flexbox para el layout */
     flex-direction: column; /* Colocar los elementos en columna */
     align-items: center; /* Centrar horizontalmente */
     width: 600px; /* Definir el ancho del contenedor, ajústalo según tus necesidades */
 }
-.social-media a {
+.redes-sociales a {
     color: white;
     margin: 0 4px; /* Mantener margen entre iconos */
     text-decoration: none;
@@ -227,7 +227,7 @@ footer {
 }
 
 /* Línea divisoria entre los iconos de redes sociales y el texto */
-.divider {
+.divisor {
     border: none;
     border-top: 1px solid #ccc; /* Mantener línea delgada */
     width: 50%; /* Ajustar ancho de la línea */

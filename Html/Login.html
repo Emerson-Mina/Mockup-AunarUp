@@ -1,74 +1,75 @@
-<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html> <!-- Define el tipo de documento como HTML5 -->
+<html lang="es"> <!-- Comienza el documento HTML y establece el idioma como español -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AunarUP - Inicia Sesión</title>
-    <link rel="stylesheet" href="../Css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta charset="UTF-8"> <!-- Define la codificación de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace que el diseño sea responsivo en dispositivos móviles -->
+    <title>AunarUP - Iniciar Sesión</title> <!-- Título de la pestaña del navegador -->
+    <link rel="stylesheet" href="../Css/styles.css"> <!-- Enlaza el archivo CSS externo para estilos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Enlaza Font Awesome para usar íconos -->
 </head>
-<body>
-    <header>
-        <div class="header-container">
-            <img src="../Images/AunarUp-removebg-preview.png" alt="AunarUp Logo" class="header-logo">
-            <div class="header-links">
-                <a href="#">Eventos Y Noticias</a>
-            </div>
-        </div>
-    </header>
+<body> <!-- Comienza el cuerpo del documento -->
+    <header> <!-- Sección de encabezado -->
+        <div class="contenedor-cabecera"> <!-- Contenedor para la cabecera -->
+            <img src="../Images/AunarUp-removebg-preview.png" alt="Logo AunarUp" class="logo-cabecera"> <!-- Logo de AunarUP -->
+            <div class="enlaces-cabecera"> <!-- Sección de enlaces en la cabecera -->
+                <a href="#">Eventos y Noticias</a> <!-- Enlace a eventos y noticias -->
+            </div> <!-- Cierre de la sección de enlaces en la cabecera -->
+        </div> <!-- Cierre del contenedor de la cabecera -->
+    </header> <!-- Cierre de la sección de encabezado -->
 
-    <div class="container">
-        <div class="left-section">
-            <img src="../Images/cropped-Logo-AUNAR-AZUL.-03-removebg-preview (1).png" alt="Logo AUNAR" class="logo">
-        </div>
+    <div class="contenedor"> <!-- Contenedor principal de la página -->
+        <div class="seccion-izquierda"> <!-- Sección izquierda, generalmente para mostrar imágenes o logotipos -->
+            <img src="../Images/cropped-Logo-AUNAR-AZUL.-03-removebg-preview (1).png" alt="Logo AUNAR" class="logo"> <!-- Logo de AUNAR -->
+        </div> <!-- Cierre de la sección izquierda -->
         
-        <div class="right-section">
-            <form action="login.php" method="POST">
-                <h2>Inicia sesión</h2>
-                <p>AunarUp gestiona tus puntos de Bienestar Institucional</p>
-                <label for="usuario">Usuario</label>
-                <input type="text" id="usuario" name="usuario" required>
+        <div class="seccion-derecha"> <!-- Sección derecha, para el formulario de inicio de sesión -->
+            <form action="login.php" method="POST"> <!-- Formulario que envía datos a login.php usando el método POST -->
+                <h2>Iniciar sesión</h2> <!-- Título del formulario -->
+                <p>AunarUp gestiona tus puntos de Bienestar Institucional</p> <!-- Descripción del servicio -->
+                <label for="usuario">Usuario</label> <!-- Etiqueta para el campo de usuario -->
+                <input type="text" id="usuario" name="usuario" required> <!-- Campo de entrada para el usuario, requerido -->
                 
-                <label for="contraseña">Contraseña</label>
-                <input type="password" id="contraseña" name="contraseña" required>
-                <div class="forgot-password-container">
-                    <a href="forgot_password.php" class="forgot-password">¿Olvidaste <br>tu contraseña?</a>
-                </div>
+                <label for="contraseña">Contraseña</label> <!-- Etiqueta para el campo de contraseña -->
+                <input type="password" id="contraseña" name="contraseña" required> <!-- Campo de entrada para la contraseña, requerido -->
+                
+                <div class="contenedor-contraseña-olvidada"> <!-- Contenedor para el enlace de contraseña olvidada -->
+                    <a href="forgot_password.php" class="contraseña-olvidada">¿Olvidaste <br>tu contraseña?</a> <!-- Enlace para recuperar la contraseña -->
+                </div> <!-- Cierre del contenedor de contraseña olvidada -->
                                     
-                <button type="submit">Ingresar</button>
-            </form>
-        </div>
-    </div>
+                <button type="submit">Ingresar</button> <!-- Botón para enviar el formulario -->
+            </form> <!-- Cierre del formulario -->
+        </div> <!-- Cierre de la sección derecha -->
+    </div> <!-- Cierre del contenedor principal -->
 
-    <footer>
-        <div class="footer-container">
-            <div class="footer-left">
-                <h2>Gestión de Puntos de Bienestar</h2>
-                <p>Acumula y visualiza tus puntos de actividades universitarias.</p> 
-            </div>
+    <footer> <!-- Sección de pie de página -->
+        <div class="contenedor-pie"> <!-- Contenedor para el pie de página -->
+            <div class="pie-izquierda"> <!-- Sección izquierda del pie de página -->
+                <h2>Gestión de Puntos de Bienestar</h2> <!-- Título en el pie de página -->
+                <p>Acumula y visualiza tus puntos de actividades universitarias.</p> <!-- Descripción del servicio en el pie de página -->
+            </div> <!-- Cierre de la sección izquierda del pie de página -->
     
-            <div class="footer-right social-media">
-                <div class="icons">
-                    <a href="https://wa.me/1234567890" target="_blank">
-                        <i class="fab fa-whatsapp"></i>
-                    </a>
-                    <a href="https://www.facebook.com/AUNAR" target="_blank">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="https://www.instagram.com/AUNAR" target="_blank">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="https://www.tiktok.com/@AUNAR" target="_blank">
-                        <i class="fab fa-tiktok"></i>
-                    </a>
-                </div>
-            
-                <hr class="divider">
-                            <a href="https://github.com/AUNAR" target="_blank">
-                    <i class="fab fa-github"></i>
-                </a>
-            </div>
-        </div>
-    </footer>
-</body>
-</html>
+            <div class="pie-derecha redes-sociales"> <!-- Sección derecha del pie de página, para redes sociales -->
+                <div class="iconos"> <!-- Contenedor para los iconos de redes sociales -->
+                    <a href="https://wa.me/1234567890" target="_blank"> <!-- Enlace a WhatsApp -->
+                        <i class="fab fa-whatsapp"></i> <!-- Icono de WhatsApp -->
+                    </a> <!-- Cierre del enlace a WhatsApp -->
+                    <a href="https://www.facebook.com/AUNAR" target="_blank"> <!-- Enlace a Facebook -->
+                        <i class="fab fa-facebook-f"></i> <!-- Icono de Facebook -->
+                    </a> <!-- Cierre del enlace a Facebook -->
+                    <a href="https://www.instagram.com/AUNAR" target="_blank"> <!-- Enlace a Instagram -->
+                        <i class="fab fa-instagram"></i> <!-- Icono de Instagram -->
+                    </a> <!-- Cierre del enlace a Instagram -->
+                    <a href="https://www.tiktok.com/@AUNAR" target="_blank"> <!-- Enlace a TikTok -->
+                        <i class="fab fa-tiktok"></i> <!-- Icono de TikTok -->
+                    </a> <!-- Cierre del enlace a TikTok -->
+                </div> <!-- Cierre del contenedor para los iconos de redes sociales -->
+                
+                <hr class="divisor"> <!-- Línea divisoria en el pie de página -->
+                <a href="https://github.com/AUNAR" target="_blank"> <!-- Enlace al perfil de GitHub -->
+                    <i class="fab fa-github"></i> <!-- Icono de GitHub -->
+                </a> <!-- Cierre del enlace al perfil de GitHub -->
+            </div> <!-- Cierre de la sección derecha del pie de página -->
+        </div> <!-- Cierre del contenedor del pie de página -->
+    </footer> <!-- Cierre del pie de página -->
+</body> <!-- Cierre del cuerpo del documento -->
+</html> <!-- Cierre del documento HTML -->
