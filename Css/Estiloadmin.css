@@ -50,8 +50,120 @@ header {
     text-decoration: underline; /* Subrayar al pasar el ratón */
 }
 
+main.contenedor-principal {
+    flex: 1; /* Permitir que el main ocupe el espacio restante entre el encabezado y el pie de página */
+    display: flex; /* Usar flexbox para organizar el contenido */
+    flex-direction: column; /* Organizar los elementos en una dirección vertical */
+    justify-content: flex-start; /* Alinear elementos al inicio del contenedor */
+    align-items: center; /* Centrar elementos horizontalmente */
+    width: 100%; /* Ancho completo del contenedor principal */
+    padding: 20px; /* Añadir un relleno de 20px en todo el contenedor */
+    background-color: white; /* Color de fondo blanco para el contenedor principal */
+    overflow: auto; /* Añadir scroll si el contenido excede el espacio disponible */
+}
 
+main.contenedor-principal h1 {
+    text-align: center; /* Centrar el texto del encabezado principal */
+    font-size: 2em; /* Tamaño de la fuente del título principal */
+    color: #1d4ed8; /* Color azul del título */
+    margin-bottom: 0px; /* Espacio inferior ajustado para separación */
+}
 
+.panel-gestion p {
+    text-align: center; /* Centrar texto en los párrafos dentro del panel de gestión */
+    font-size: 1em; /* Tamaño de la fuente para los párrafos */
+    color: #555; /* Color gris para el texto de los párrafos */
+    margin: 10px 0 10px 0; /* Margen vertical para espaciar los párrafos */
+}
+
+.gestiones {
+    display: flex; /* Usar flexbox para organizar los ítems de gestión */
+    justify-content: space-between; /* Espacio entre los ítems de gestión */
+    gap:12px; /* Espacio de 20px entre los ítems de gestión */
+    width: 100%; /* Asegurarse de que ocupe todo el ancho del contenedor principal */
+}
+
+.gestiones a {
+    text-decoration: none; /* Eliminar subrayado en los enlaces */
+    color: inherit; /* Heredar el color del texto del contenedor */
+}
+
+.gestiones a:hover {
+    color: #007BFF; /* Cambiar el color del texto al pasar el ratón */
+}
+
+/* Estilos para el ítem 1 */
+.gestion-item1 {
+    background-color: #e0e7ff; /* Color de fondo azul claro */
+    padding: 20px; /* Espaciado interno para el ítem */
+    min-width: 250px; /* Evitar que sean demasiado pequeños */
+    border-radius: 10px; /* Bordes redondeados para el ítem */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar efecto de profundidad */
+    text-align: center; /* Centrar texto dentro del ítem */
+}
+
+/* Estilos para el ítem 2 */
+.gestion-item2 {
+    background-color: #e0e7ff; /* Color de fondo azul claro */
+    padding: 20px; /* Espaciado interno para el ítem */
+    min-width: 250px; /* Evitar que sean demasiado pequeños */
+    border-radius: 10px; /* Bordes redondeados para el ítem */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar efecto de profundidad */
+    text-align: center; /* Centrar texto dentro del ítem */
+    margin-top: 8px; /* Espacio superior adicional para el ítem 1 */
+}
+
+/* Estilos para el ítem 3 */
+.gestion-item3 {
+    background-color: #e0e7ff; /* Color de fondo azul claro */
+    padding: 20px; /* Espaciado interno para el ítem */
+    min-width: 250px; /* Evitar que sean demasiado pequeños */
+    border-radius: 10px; /* Bordes redondeados para el ítem */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar efecto de profundidad */
+    text-align: center; /* Centrar texto dentro del ítem */
+    margin-top: 16px; /* Espacio superior adicional para el ítem 2 */
+}
+/* Estilos para el ítem 4 */
+.gestion-item4 {
+    background-color: #e0e7ff; /* Color de fondo azul claro */
+    padding: 20px; /* Espaciado interno para el ítem */
+    min-width: 250px; /* Evitar que sean demasiado pequeños */
+    border-radius: 10px; /* Bordes redondeados para el ítem */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar efecto de profundidad */
+    text-align: center; /* Centrar texto dentro del ítem */
+    margin-top: 8px; /* Espacio superior adicional para el ítem 3 */
+}
+/* Estilos para el ítem 5 */
+.gestion-item5 {
+    background-color: #e0e7ff; /* Color de fondo azul claro */
+    padding: 20px; /* Espaciado interno para el ítem */
+    min-width: 250px; /* Evitar que sean demasiado pequeños */
+    border-radius: 10px; /* Bordes redondeados para el ítem */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar efecto de profundidad */
+    text-align: center; /* Centrar texto dentro del ítem */
+}
+.gestion-item:hover {
+    transform: scale(1.05); /* Escalar el ítem al hacer hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Aumentar la sombra al hacer hover */
+    background-color: #d1e7ff; /* Cambiar el color de fondo al hacer hover */
+    filter: brightness(1.05); /* Aumentar el brillo del ítem */
+    border: 2px solid #90cdf4; /* Añadir un borde sutil */
+}
+.gestion-item h2 {
+    color: #3498db; /* Color azul para los títulos de los ítems */
+    margin-bottom: 10px; /* Espacio entre el título y el párrafo */
+}
+
+.gestion-item p {
+    color: #2c3e50; /* Color oscuro para los párrafos */
+    margin-top: 10px; /* Espacio superior para los párrafos */
+}
+
+.gestion-item i {
+    color: #2980b9; /* Color azul más oscuro para los íconos */
+    margin: 15px 0; /* Espaciado de 15px arriba y abajo del ícono */
+    font-size: 90px; /* Aumentar el tamaño del ícono a 90px */
+}
 
 /* Pie de página */
 footer {
@@ -106,3 +218,41 @@ footer {
     margin: 10px auto; /* Centrar la línea */
 }
 
+/* Estilos para móviles */
+@media (max-width: 768px) {
+    header {
+        height: 60px;
+    }
+
+    main.contenedor-principal {
+        padding: 15px; /* Reducir padding para móviles */
+    }
+
+    .gestiones {
+        flex-direction: column; /* Los ítems de gestión se colocan en columna para móviles */
+        align-items: center;
+    }
+
+    .gestion-item1, .gestion-item2, .gestion-item3 {
+        min-width: 100%; /* Los ítems de gestión ocupan el 100% del ancho del contenedor en móviles */
+    }
+
+    footer {
+        position: static; /* Evitar que el pie de página sea fijo en móviles */
+    }
+
+    .contenedor-pie {
+        flex-direction: column; /* Cambiar la dirección del pie de página a columna */
+        text-align: center;
+    }
+
+    .pie-derecha {
+        width: 100%; /* El pie de página ocupa el 100% en móviles */
+    }
+    .pie-izquierda p {
+        margin-left: 0px ; ;
+    }
+    .redes-sociales a {
+        font-size: 24px; /* Ajustar tamaño de iconos en móviles */
+    }
+}

@@ -8,12 +8,13 @@
 
 body {
     background-color: white; /* Color de fondo del cuerpo */
-    margin: 0; /* Eliminar márgenes del body para que el pie de página se adhiera a la parte inferior */
+    margin: 0; /* Eliminar márgenes del body */
     display: flex; /* Usar flexbox para alinear el contenido */
     flex-direction: column; /* Dirección de la columna */
+    min-height: 100vh; /* Asegura que el body ocupe al menos la altura de la ventana */
+    overflow-x: hidden; /* Evitar scroll horizontal */
 }
 
-/* Estilos para el encabezado */
 header {
     background-color: #1e6af7; /* Color de fondo del encabezado */
     height: 70px; /* Altura fija del encabezado */
@@ -22,17 +23,16 @@ header {
     justify-content: space-between; /* Espacio entre los elementos */
     align-items: center; /* Centrar elementos verticalmente */
     border-bottom: 10px solid #a1c0fa;
-    border-radius:  0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
 }
 
-.contenedor-cabecera{
+.contenedor-cabecera {
     display: flex; /* Usar flexbox para el contenedor del encabezado */
     justify-content: space-between; /* Espacio entre los elementos */
     width: 100%; /* Ocupa el 100% del ancho */
     align-items: center; /* Alinear verticalmente los elementos */
 }
 
-/* Estilo para el logo */
 .logo-cabecera {
     max-width: 100px; /* Ancho máximo del logo */
     height: auto; /* Mantener proporción */
@@ -50,175 +50,139 @@ header {
     text-decoration: underline; /* Subrayar al pasar el ratón */
 }
 
-/* Contenedor principal que alberga las secciones */
-.contenedor {
-    display: flex; /* Usar flexbox para el layout */
-    justify-content: space-between; /* Espacio entre las secciones */
-    width: 100%; /* Ocupa el 100% del ancho */
-    height: calc(100vh - 160px); /* Altura calculada, restando el espacio del header y footer */
+main.contenedor-principal {
+    flex: 1; /* Permitir que el main ocupe el espacio restante entre el encabezado y el pie de página */
+    display: flex; /* Usar flexbox para organizar el contenido */
+    flex-direction: column; /* Organizar los elementos en una dirección vertical */
+    justify-content: flex-start; /* Alinear elementos al inicio del contenedor */
+    align-items: center; /* Centrar elementos horizontalmente */
+    width: 100%; /* Ancho completo del contenedor principal */
+    padding: 20px; /* Añadir un relleno de 20px en todo el contenedor */
+    background-color: white; /* Color de fondo blanco para el contenedor principal */
+    overflow: auto; /* Añadir scroll si el contenido excede el espacio disponible */
 }
 
-/* Sección izquierda */
-.seccion-izquierda {
-    width: 60%; /* Ancho de la sección izquierda */
-    background-color: white; /* Color de fondo de la sección */
-    display: flex; /* Usar flexbox para el layout */
-    justify-content: center; /* Centrar contenido verticalmente */
-    align-items: center; /* Centrar contenido horizontalmente */
-    padding: 20px; /* Relleno interno de la sección */
-    height: 100%; /* Asegúrate de que el contenedor ocupe el 100% de la altura disponible */
-
+main.contenedor-principal h1 {
+    text-align: center; /* Centrar el texto del encabezado principal */
+    font-size: 2em; /* Tamaño de la fuente del título principal */
+    color: #1d4ed8; /* Color azul del título */
+    margin-bottom: 10px; /* Espacio inferior ajustado para separación */
 }
 
-/* Logo de la sección izquierda */
-.seccion-izquierda .logo {
-    width: 600px; /* Ancho del logo */
-    margin-left: 20px;
+.panel-gestion p {
+    text-align: center; /* Centrar texto en los párrafos dentro del panel de gestión */
+    font-size: 1em; /* Tamaño de la fuente para los párrafos */
+    color: #555; /* Color gris para el texto de los párrafos */
+    margin: 10px 0 20px 0; /* Margen vertical para espaciar los párrafos */
 }
 
-/* Sección derecha */
-.seccion-derecha {
-    width: 40%; /* Ancho de la sección derecha */
-    background-color: white; /* Color de fondo gris claro de la sección */
-    display: flex; /* Usar flexbox para el layout */
-    flex-direction: column; /* Dirección de la columna */
-    justify-content: center; /* Centrar contenido verticalmente */
-    align-items: center; /* Centrar contenido horizontalmente */
-    padding:20px; /* Relleno interno de la sección */
+.gestiones {
+    display: flex; /* Usar flexbox para organizar los ítems de gestión */
+    justify-content: space-between; /* Espacio entre los ítems de gestión */
+    gap: 20px; /* Espacio de 20px entre los ítems de gestión */
+    width: 100%; /* Asegurarse de que ocupe todo el ancho del contenedor principal */
+    max-width: 1200px; /* Limitar el ancho máximo del contenedor de gestiones */
 }
 
-/* Estilos para el formulario */
-form {
-    display: flex; /* Usar flexbox para el formulario */
-    flex-direction: column; /* Dirección de la columna */
-    width: 90%; /* Ancho del formulario */
-    height: 1000px; /* Altura fija del formulario (ajusta según sea necesario) */
-    background-color: #ccdeff; /* Fondo blanco para el formulario */
-    padding: 20px; /* Relleno interno del formulario */
-    border-radius: 10px; /* Bordes redondeados en el formulario */
-    overflow: auto; /* Añadir scroll si el contenido excede la altura */
-    margin: 20px auto; /* Margen superior e inferior de 20px, centrado horizontalmente */
-    margin: 5px 10px 20px; /* Margen superior 20px, derecho 0px, inferior 20px, izquierdo 50px */
-
+.gestiones a {
+    text-decoration: none; /* Eliminar subrayado en los enlaces */
+    color: inherit; /* Heredar el color del texto del contenedor */
 }
 
-
-/* Encabezado y párrafo de la sección derecha */
-.seccion-derecha h2 {
-    text-align: center; /* Centrar el texto del encabezado */
-    font-size: 40px; /* Tamaño del encabezado */
-    color: #006de2; /* Color del texto del encabezado */    
-    margin-bottom: 10px; /* Espacio debajo del párrafo */
-
+.gestiones a:hover {
+    color: #007BFF; /* Cambiar el color del texto al pasar el ratón */
 }
 
-.seccion-derecha p {
-    text-align: center; /* Centrar el texto del encabezado */
-    font-size: 15px; /* Tamaño del párrafo */
-    color: #4d87f3; /* Color del texto del párrafo */
-    margin-bottom: 20px; /* Espacio debajo del párrafo */
-    font-weight: bold; /* Texto en negrita */
-
+/* Estilos para el ítem 1 */
+.gestion-item1 {
+    background-color: #e0e7ff; /* Color de fondo azul claro */
+    padding: 20px; /* Espaciado interno para el ítem */
+    height: 250px; /* Altura fija para el ítem */
+    min-width: 250px; /* Evitar que sean demasiado pequeños */
+    border-radius: 10px; /* Bordes redondeados para el ítem */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar efecto de profundidad */
+    text-align: center; /* Centrar texto dentro del ítem */
+    margin-top: 30px; /* Espacio superior adicional para el ítem 1 */
 }
 
-/* Estilos para las etiquetas */
-label {
-    font-size: 15px; /* Tamaño de la fuente de la etiqueta */
-    margin-bottom: 10px; /* Espacio debajo de la etiqueta */
-    color: #000000; /* Color del texto de la etiqueta */
-    margin-left: 26px; /* Añade margen de 10px a la izquierda */
-    font-weight: bold; /* Texto en negrita */
+/* Estilos para el ítem 2 */
+.gestion-item2 {
+    background-color: #d0eaff; /* Color de fondo azul más claro */
+    padding: 20px; /* Espaciado interno para el ítem */
+    height: 250px; /* Altura fija para el ítem */
+    min-width: 250px; /* Evitar que sean demasiado pequeños */
+    border-radius: 10px; /* Bordes redondeados para el ítem */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar efecto de profundidad */
+    text-align: center; /* Centrar texto dentro del ítem */
 }
 
-/* Estilos para los campos de entrada */
-input {
-    padding: 10px; /* Relleno interno del campo */
-    margin-bottom: 6px; /* Espacio debajo del campo */
-    border-radius: 5px; /* Esquinas redondeadas */
-    border: 1px solid #ccc; /* Borde del campo */
-    width: 100%; /* Ocupa el 100% del contenedor padre */
-    max-width: 370px; /* Ancho máximo para reducir el tamaño */
-    box-sizing: border-box; /* Asegura que padding y borde se incluyan en el ancho */
-    margin-left: 20px; /* Añade margen de 10px a la izquierda */
-    
+/* Estilos para el ítem 3 */
+.gestion-item3 {
+    background-color: #e0e7ff; /* Color de fondo azul claro */
+    padding: 20px; /* Espaciado interno para el ítem */
+    height: 250px; /* Altura fija para el ítem */
+    min-width: 250px; /* Evitar que sean demasiado pequeños */
+    border-radius: 10px; /* Bordes redondeados para el ítem */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar efecto de profundidad */
+    text-align: center; /* Centrar texto dentro del ítem */
+    margin-top: 30px; /* Espacio superior adicional para el ítem 3 */
+}
+.gestion-item:hover {
+    transform: scale(1.05); /* Escalar el ítem al hacer hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Aumentar la sombra al hacer hover */
+    background-color: #d1e7ff; /* Cambiar el color de fondo al hacer hover */
+    filter: brightness(1.05); /* Aumentar el brillo del ítem */
+    border: 2px solid #90cdf4; /* Añadir un borde sutil */
+}
+.gestion-item h2 {
+    color: #3498db; /* Color azul para los títulos de los ítems */
+    margin-bottom: 10px; /* Espacio entre el título y el párrafo */
 }
 
-
-button {
-    padding: 12px 12px; /* Relleno del botón */
-    background-color: #007bff; /* Color de fondo */
-    color: white; /* Color del texto */
-    border: none; /* Sin borde */
-    border-radius: 8px; /* Bordes redondeados */
-    cursor: pointer; /* Cambiar cursor */
-    width: 300px; /* Ancho fijo para el botón */
-    max-width: 100%; /* Evitar que crezca más allá del 100% del contenedor */
-    align-self: center; /* Centrar el botón dentro del formulario */
-    font-size: 25px; /* Tamaño más grande de la fuente */
-    font-weight: bold; /* Texto en negrita */
+.gestion-item p {
+    color: #2c3e50; /* Color oscuro para los párrafos */
+    margin-top: 10px; /* Espacio superior para los párrafos */
 }
 
-button:hover {
-    background-color: #0056b3; /* Color de fondo del botón al pasar el ratón */
+.gestion-item i {
+    color: #2980b9; /* Color azul más oscuro para los íconos */
+    margin: 15px 0; /* Espaciado de 15px arriba y abajo del ícono */
+    font-size: 90px; /* Aumentar el tamaño del ícono a 90px */
 }
 
-.contenedor-contraseña-olvidada {
-    text-align: right; /* Alinea el contenido del contenedor a la derecha */
-    margin-right: 25px; /* Añade margen de 10px a la izquierda */
-    margin-bottom: 10px; /* Espacio debajo del campo */
-
-
-}
-
-.contraseña-olvidada{
-    font-size: 14px; /* Tamaño de la fuente del enlace */
-    color: #4d87f3; /* Color del texto del enlace */
-    text-decoration: none; /* Sin subrayado */
-    font-weight: bold; /* Texto en negrita */
-
-}
-
-.contraseña-olvidada:hover {
-    text-decoration: underline; /* Subrayar al pasar el ratón */
-}
 /* Pie de página */
 footer {
     background-color: #1e6af7; /* Color de fondo del pie de página */
     color: white; /* Color del texto del pie de página */
     padding: 10px 0;
     width: 100%;
-    position: fixed; /* Posicionar el pie de página siempre en la parte inferior */
-    bottom: 0; /* Alinearlo en la parte inferior */
-    left: 0; /* Alinearlo a la izquierda */
     border-top: 10px solid #a1c0fa;
     border-radius: 5px 5px 0 0;
 }
-/* Contenedor del pie de págia */
+
 .contenedor-pie {
     display: flex; /* Usar flexbox para el layout */
     justify-content: space-between; /* Espacio entre los lados */
+    padding: 0 20px;
 }
-.pie-izquierda {
-    flex-direction: column;
-    align-items: center; /* Centrar horizontalmente */
-}
-/* Aplicar negrita al título */
+
 .pie-izquierda h2 {
-    margin-left: 40px;
     font-weight: bold; /* Aplicar negrita */
     margin-bottom: 10px; /* Espacio inferior para separar del párrafo */
 }
-/* Estilo para el párrafo */
+
 .pie-izquierda p {
     margin-left: 60px;
+    margin-bottom: 10px;
 }
-/* Contenedor de los iconos de redes sociales */
+
 .pie-derecha {
     display: flex; /* Usar flexbox para el layout */
     flex-direction: column; /* Colocar los elementos en columna */
     align-items: center; /* Centrar horizontalmente */
     width: 600px; /* Definir el ancho del contenedor, ajústalo según tus necesidades */
 }
+
 .redes-sociales a {
     color: white;
     margin: 0 4px; /* Mantener margen entre iconos */
@@ -226,7 +190,7 @@ footer {
     font-size: 28px; /* Aumentar tamaño de los iconos */
 }
 
-/* Línea divisoria entre los iconos de redes sociales y el texto */
+
 .divisor {
     border: none;
     border-top: 1px solid #ccc; /* Mantener línea delgada */
@@ -234,3 +198,42 @@ footer {
     margin: 10px auto; /* Centrar la línea */
 }
 
+
+/* Estilos para móviles */
+@media (max-width: 768px) {
+    header {
+        height: 60px;
+    }
+
+    main.contenedor-principal {
+        padding: 15px; /* Reducir padding para móviles */
+    }
+
+    .gestiones {
+        flex-direction: column; /* Los ítems de gestión se colocan en columna para móviles */
+        align-items: center;
+    }
+
+    .gestion-item1, .gestion-item2, .gestion-item3 {
+        min-width: 100%; /* Los ítems de gestión ocupan el 100% del ancho del contenedor en móviles */
+    }
+
+    footer {
+        position: static; /* Evitar que el pie de página sea fijo en móviles */
+    }
+
+    .contenedor-pie {
+        flex-direction: column; /* Cambiar la dirección del pie de página a columna */
+        text-align: center;
+    }
+
+    .pie-derecha {
+        width: 100%; /* El pie de página ocupa el 100% en móviles */
+    }
+    .pie-izquierda p {
+        margin-left: 0px ; ;
+    }
+    .redes-sociales a {
+        font-size: 24px; /* Ajustar tamaño de iconos en móviles */
+    }
+}
