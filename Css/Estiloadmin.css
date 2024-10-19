@@ -87,11 +87,6 @@ main.contenedor-principal h1 {
     text-decoration: none; /* Eliminar subrayado en los enlaces */
     color: inherit; /* Heredar el color del texto del contenedor */
 }
-
-.gestiones a:hover {
-    color: #007BFF; /* Cambiar el color del texto al pasar el ratón */
-}
-
 /* Estilos para el ítem 1 */
 .gestion-item1 {
     background-color: #e0e7ff; /* Color de fondo azul claro */
@@ -208,6 +203,10 @@ footer {
     margin: 0 4px; /* Mantener margen entre iconos */
     text-decoration: none;
     font-size: 28px; /* Aumentar tamaño de los iconos */
+}
+.fab:hover {
+    transform: scale(1.05); /* Escalar el ítem al hacer hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Aumentar la sombra al hacer hover */
 }
 
 /* Línea divisoria entre los iconos de redes sociales y el texto */

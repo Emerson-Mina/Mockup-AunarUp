@@ -8,11 +8,9 @@
 
 body {
     background-color: white; /* Color de fondo del cuerpo */
-    margin: 0; /* Eliminar márgenes del body */
     display: flex; /* Usar flexbox para alinear el contenido */
     flex-direction: column; /* Dirección de la columna */
     min-height: 100vh; /* Asegura que el body ocupe al menos la altura de la ventana */
-    overflow-x: hidden; /* Evitar scroll horizontal */
 }
 
 header {
@@ -172,8 +170,8 @@ footer {
 }
 
 .pie-izquierda p {
-    margin-left: 60px;
-    margin-bottom: 10px;
+    margin-left: 60px;/* Espacio entre la Margen de la pantalla izquierda  */
+    margin-bottom: 10px;/* Espacio inferior para separar del párrafo */
 }
 
 .pie-derecha {
@@ -184,56 +182,76 @@ footer {
 }
 
 .redes-sociales a {
-    color: white;
+    color: white; /*Color de los iconos*/
     margin: 0 4px; /* Mantener margen entre iconos */
-    text-decoration: none;
+    text-decoration: none; /*Sin subrayado de los iconos*/
     font-size: 28px; /* Aumentar tamaño de los iconos */
 }
+.fab:hover { /*Efectos para los iconos*/
+    transform: scale(1.05); 
+}
 
-
-.divisor {
+.divisor { /*Linea que divide los iconos con los textos*/
     border: none;
     border-top: 1px solid #ccc; /* Mantener línea delgada */
     width: 50%; /* Ajustar ancho de la línea */
     margin: 10px auto; /* Centrar la línea */
 }
 
+/* Estilos para pantallas más grandes que 1000px, cuando se minimiza la ventana */
+@media (max-width: 1000px) {
+    .gestiones {
+        gap: 10px; /* Reducir el espacio entre los elementos de la clase "gestiones" a 10px para adaptarse mejor a pantallas más pequeñas */
+    }
+    .gestion-item {
+        height: auto; /* Ajustar automáticamente la altura de los ítems de gestión */
+        padding: 10px; /* Reducir el padding para adaptarse a pantallas más pequeñas */
+    }
+    .gestion-item i {
+        margin: 10px 0; /* Agregar un margen de 10px arriba y abajo del ícono */
+        font-size: 80px; /* Ajustar el tamaño del ícono a 80px */
+    }
+}
 
-/* Estilos para móviles */
-@media (max-width: 768px) {
+/* Estilos específicos para móviles con un ancho de pantalla menor a 785px */
+@media (max-width: 785px) {
     header {
-        height: 60px;
+        height: 60px; /* Reducir la altura del encabezado a 60px en móviles */
     }
 
     main.contenedor-principal {
-        padding: 15px; /* Reducir padding para móviles */
+        padding: 15px; /* Reducir el padding del contenedor principal en móviles */
     }
 
     .gestiones {
-        flex-direction: column; /* Los ítems de gestión se colocan en columna para móviles */
-        align-items: center;
+        flex-direction: column; /* Colocar los ítems de gestión en columna en lugar de fila para móviles */
+        align-items: center; /* Alinear los ítems de gestión al centro horizontalmente */
+        margin-top: 30px; /* Agregar un margen superior de 30px a la sección de gestiones */
     }
 
-    .gestion-item1, .gestion-item2, .gestion-item3 {
-        min-width: 100%; /* Los ítems de gestión ocupan el 100% del ancho del contenedor en móviles */
+    .gestion-item {
+        margin-top: 0px; /* Eliminar el margen superior de los ítems de gestión */
     }
 
     footer {
-        position: static; /* Evitar que el pie de página sea fijo en móviles */
+        position: static; /* El pie de página no será fijo en la parte inferior en móviles, se comportará de forma estática */
     }
 
     .contenedor-pie {
-        flex-direction: column; /* Cambiar la dirección del pie de página a columna */
-        text-align: center;
+        flex-direction: column; /* Cambiar la dirección de los elementos del pie de página a una columna en lugar de fila */
+        text-align: center; /* Alinear el texto del pie de página al centro */
     }
 
     .pie-derecha {
-        width: 100%; /* El pie de página ocupa el 100% en móviles */
+        width: 100%; /* Hacer que el pie derecho ocupe el 100% del ancho en móviles */
     }
+
     .pie-izquierda p {
-        margin-left: 0px ; ;
+        margin-left: 0; /* Eliminar el margen izquierdo de los párrafos en el pie de página izquierdo para móviles */
     }
+
     .redes-sociales a {
-        font-size: 24px; /* Ajustar tamaño de iconos en móviles */
+        font-size: 24px; /* Ajustar el tamaño de los iconos de redes sociales a 24px en móviles */
     }
 }
+

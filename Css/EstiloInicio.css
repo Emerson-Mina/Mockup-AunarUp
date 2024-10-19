@@ -8,12 +8,11 @@
 
 body {
     background-color: white; /* Color de fondo del cuerpo */
-    margin: 0; /* Eliminar márgenes del body para que el pie de página se adhiera a la parte inferior */
     display: flex; /* Usar flexbox para alinear el contenido */
     flex-direction: column; /* Dirección de la columna */
+    min-height: 100vh; /* Asegura que el body ocupe al menos la altura de la ventana */
 }
 
-/* Estilos para el encabezado */
 header {
     background-color: #1e6af7; /* Color de fondo del encabezado */
     height: 70px; /* Altura fija del encabezado */
@@ -22,17 +21,16 @@ header {
     justify-content: space-between; /* Espacio entre los elementos */
     align-items: center; /* Centrar elementos verticalmente */
     border-bottom: 10px solid #a1c0fa;
-    border-radius:  0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
 }
 
-.contenedor-cabecera{
+.contenedor-cabecera {
     display: flex; /* Usar flexbox para el contenedor del encabezado */
     justify-content: space-between; /* Espacio entre los elementos */
     width: 100%; /* Ocupa el 100% del ancho */
     align-items: center; /* Alinear verticalmente los elementos */
 }
 
-/* Estilo para el logo */
 .logo-cabecera {
     max-width: 100px; /* Ancho máximo del logo */
     height: auto; /* Mantener proporción */

@@ -1,66 +1,85 @@
-<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html> <!-- Define el tipo de documento como HTML5 -->
+<html lang="es"> <!-- Comienza el documento HTML y establece el idioma como español -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Inicia sesión en AunarUP para gestionar tus actividades universitarias y eventos.">
-    <meta name="keywords" content="AunarUP, gestión estudiantil, inicio de sesión, actividades universitarias">
-    <title>AunarUP - Iniciar Sesión</title>
-    <link rel="stylesheet" href="../Css/InicoEstudiante.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta charset="UTF-8"> <!-- Define la codificación de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace que el diseño sea responsive en dispositivos móviles -->
+    <meta name="description" content="Inicia sesión en AunarUP para gestionar tus actividades universitarias y eventos."> <!-- Descripción de la página para los motores de búsqueda -->
+    <meta name="keywords" content="AunarUP, gestión estudiantil, inicio de sesión, actividades universitarias"> <!-- Palabras clave para SEO -->
+    <title>AunarUP - Panel de Gestión Estudiantil</title> <!-- Título de la pestaña del navegador -->
+    <link rel="icon" href="https://campusvirtual.aunarvillavicencio.edu.co/pluginfile.php/1/core_admin/favicon/64x64/1718115488/ESCUDO%20INSTITUCIONAL-04%20%281%2950.png" type="image/png">
+    <link rel="stylesheet" href="../Css/InicoEstudiante.css"> <!-- Enlace al archivo CSS externo para aplicar estilos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Enlace a Font Awesome para el uso de íconos -->
 </head>
-<body>
-    <header>
-        <div class="contenedor-cabecera">
-            <img src="../Images/AunarUp-removebg-preview.png" alt="Logo de la aplicación AunarUP" class="logo-cabecera">
-            <div class="enlaces-cabecera">
-                <a href="../Html/Inicio.html">Cerrar Sesión</a>
-            </div>
-        </div>
-    </header>
+<body> <!-- Comienza el cuerpo del documento -->
+
+    <header> <!-- Sección de encabezado -->
+        <div class="contenedor-cabecera"> <!-- Contenedor para la cabecera -->
+            <img src="../Images/AunarUp-removebg-preview.png" alt="Logo de la aplicación AunarUP" class="logo-cabecera"> <!-- Logo de AunarUP -->
+            <div class="enlaces-cabecera"> <!-- Contenedor para los enlaces dentro de la cabecera -->
+                <a href="../Html/Inicio.html">Cerrar Sesión</a> <!-- Enlace para cerrar sesión -->
+            </div> <!-- Cierre del contenedor de enlaces en la cabecera -->
+        </div> <!-- Cierre del contenedor de la cabecera -->
+    </header> <!-- Cierre de la sección de encabezado -->
+
+    <main class="contenedor-principal"> <!-- Sección principal del contenido de la página -->
+        <section class="panel-gestion"> <!-- Sección para el panel de gestión -->
+            <h1>Panel de Gestión Estudiantil</h1> <!-- Título del panel de gestión -->
+            <p>Gestiona tus actividades, consulta eventos y actualiza tu perfil. Mantente al día con tu progreso y participa activamente en la vida universitaria.</p> <!-- Descripción de la función del panel -->
+        </section> <!-- Cierre de la sección de panel de gestión -->
+
+        <section class="gestiones"> <!-- Sección que contiene los enlaces a las diferentes gestiones -->
+            <a href="url_actividades.html" class="gestion-item gestion-item1"> <!-- Enlace para la gestión de actividades -->
+                <h2>Gestión de Actividades</h2> <!-- Título de la gestión de actividades -->
+                <i class="fa-solid fa-tasks fa-2x"></i> <!-- Icono de tareas -->
+                <p>Accede a tus actividades registradas, gestiona tu participación y revisa el estado de cada una.</p> <!-- Descripción de la gestión de actividades -->
+            </a> <!-- Cierre del enlace para la gestión de actividades -->
+            
+            <a href="url_eventos.html" class="gestion-item gestion-item2"> <!-- Enlace para el calendario de eventos -->
+                <h2>Calendario de Eventos</h2> <!-- Título del calendario de eventos -->
+                <i class="fa-solid fa-calendar-alt fa-2x"></i> <!-- Icono de calendario -->
+                <p>Consulta los eventos a los que estás inscrito y explora nuevas actividades disponibles para ti.</p> <!-- Descripción del calendario de eventos -->
+            </a> <!-- Cierre del enlace para el calendario de eventos -->
+
+            <a href="url_editar_perfil.html" class="gestion-item gestion-item3"> <!-- Enlace para editar el perfil -->
+                <h2>Editar Perfil</h2> <!-- Título de la gestión de edición de perfil -->
+                <i class="fa-solid fa-user-edit fa-2x"></i> <!-- Icono de edición de usuario -->
+                <p>Actualiza tu información, revisa tu historial de actividades y visualiza tus puntos acumulados.</p> <!-- Descripción de la gestión de perfil -->
+            </a> <!-- Cierre del enlace para editar el perfil -->
+        </section> <!-- Cierre de la sección de gestiones -->
+    </main> <!-- Cierre de la sección principal del contenido -->
+
+    <footer> <!-- Sección de pie de página -->
+        <div class="contenedor-pie"> <!-- Contenedor para el pie de página -->
+            <div class="pie-izquierda"> <!-- Sección izquierda del pie de página -->
+                <h2>Gestión de Puntos de Bienestar</h2> <!-- Título en el pie de página -->
+                <p>Acumula y visualiza tus puntos de actividades universitarias.</p> <!-- Descripción del servicio en el pie de página -->
+            </div> <!-- Cierre de la sección izquierda del pie de página -->
     
-    <main class="contenedor-principal">
-        <section class="panel-gestion">
-            <h1>Panel de Gestión Estudiantil</h1>
-            <p>Gestiona tus actividades, consulta eventos y actualiza tu perfil. Mantente al día con tu progreso y participa activamente en la vida universitaria.</p>
-        </section>
-    
-        <section class="gestiones">
-            <a href="url_actividades.html" class="gestion-item gestion-item1">
-                <h2>Gestión de Actividades</h2>
-                <i class="fa-solid fa-tasks fa-2x"></i>
-                <p>Accede a tus actividades registradas, gestiona tu participación y revisa el estado de cada una.</p>
-            </a>
-            <a href="url_eventos.html" class="gestion-item gestion-item2">
-                <h2>Calendario de Eventos</h2>
-                <i class="fa-solid fa-calendar-alt fa-2x"></i>
-                <p>Consulta los eventos a los que estás inscrito y explora nuevas actividades disponibles para ti.</p>
-            </a>
-            <a href="url_editar_perfil.html" class="gestion-item gestion-item3">
-                <h2>Editar Perfil</h2>
-                <i class="fa-solid fa-user-edit fa-2x"></i>
-                <p>Actualiza tu información, revisa tu historial de actividades y visualiza tus puntos acumulados.</p>
-            </a>
-        </section>
-    </main>
-    
-    <footer>
-        <div class="contenedor-pie">
-            <div class="pie-izquierda">
-                <h2>Gestión de Puntos de Bienestar</h2>
-                <p>Acumula y visualiza tus puntos de actividades universitarias.</p>
-            </div>
-            <div class="pie-derecha redes-sociales">
-                <div class="iconos">
-                    <a href="https://wa.me/1234567890" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                    <a href="https://www.facebook.com/AUNAR" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.instagram.com/AUNAR" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.tiktok.com/@AUNAR" target="_blank"><i class="fab fa-tiktok"></i></a>
-                </div>
-                <hr class="divisor">
-                <a href="https://github.com/AUNAR" target="_blank"><i class="fab fa-github"></i></a>
-            </div>
-        </div>
-    </footer>
-</body>
-</html>
+            <div class="pie-derecha redes-sociales"> <!-- Sección derecha del pie de página, dedicada a redes sociales -->
+                <div class="iconos"> <!-- Contenedor para los íconos de redes sociales -->
+                    <a href="https://wa.me/1234567890" target="_blank"> <!-- Enlace a WhatsApp -->
+                        <i class="fab fa-whatsapp"></i> <!-- Icono de WhatsApp -->
+                    </a> <!-- Cierre del enlace a WhatsApp -->
+
+                    <a href="https://www.facebook.com/AUNAR" target="_blank"> <!-- Enlace a Facebook -->
+                        <i class="fab fa-facebook-f"></i> <!-- Icono de Facebook -->
+                    </a> <!-- Cierre del enlace a Facebook -->
+
+                    <a href="https://www.instagram.com/AUNAR" target="_blank"> <!-- Enlace a Instagram -->
+                        <i class="fab fa-instagram"></i> <!-- Icono de Instagram -->
+                    </a> <!-- Cierre del enlace a Instagram -->
+
+                    <a href="https://www.tiktok.com/@AUNAR" target="_blank"> <!-- Enlace a TikTok -->
+                        <i class="fab fa-tiktok"></i> <!-- Icono de TikTok -->
+                    </a> <!-- Cierre del enlace a TikTok -->
+                </div> <!-- Cierre del contenedor de iconos de redes sociales -->
+
+                <hr class="divisor"> <!-- Línea divisoria en el pie de página -->
+                <a href="https://github.com/AUNAR" target="_blank"> <!-- Enlace al perfil de GitHub -->
+                    <i class="fab fa-github"></i> <!-- Icono de GitHub -->
+                </a> <!-- Cierre del enlace al perfil de GitHub -->
+            </div> <!-- Cierre de la sección derecha del pie de página -->
+        </div> <!-- Cierre del contenedor del pie de página -->
+    </footer> <!-- Cierre de la sección de pie de página -->
+</body> <!-- Cierre del cuerpo del documento -->
+</html> <!-- Cierre del documento HTML -->
