@@ -4,7 +4,7 @@
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AunarUP - Registrar</title> 
-    <link rel="stylesheet" href="../../Css/CrearperfilEtu.css"> 
+    <link rel="stylesheet" href="../../Css/Verperfil.css"> 
     <link rel="icon" href="https://campusvirtual.aunarvillavicencio.edu.co/pluginfile.php/1/core_admin/favicon/64x64/1718115488/ESCUDO%20INSTITUCIONAL-04%20%281%2950.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
 </head>
@@ -23,66 +23,55 @@
     </header>
      <!-- Cierre de la sección de encabezado -->
 
-    <main class="contenedor-principal">
+     <main class="contenedor-principal">
         <section class="registro-formulario">
-            <h2 class="titulo-registro">Registrar Nuevo Usuario</h2>
-            <form id="form-registrar">
+            <h2 class="titulo-registro">Perfil Del Estudiante</h2>
+            <form id="form-perfil">
                 <div class="campo-formulario">
                     <label for="usuario">Nombre de usuario:</label>
-                    <input type="text" id="usuario" required>
-                </div>
-                <div class="campo-formulario">
-                    <label for="contraseña">Contraseña:</label>
-                    <input type="password" id="contraseña" required>
+                    <p id="nombreusuario"></p>
                 </div>
                 <div class="campo-formulario">
                     <label for="rol">Rol:</label>
-                    <select id="rol" required>
-                        <option value="user">Usuario</option>
-                        <option value="admin">Administrador</option>
-                    </select>
+                    <p id="rolusuario"></p>
                 </div>
+                
                 <div class="campo-formulario">
                     <label for="primerNombre">Nombres:</label>
-                    <input type="text" id="primerNombre" required>
+                    <p id="primerNombre"></p>
                 </div>
                 <div class="campo-formulario">
                     <label for="apellido">Apellidos:</label>
-                    <input type="text" id="apellido" required>
+                    <p id="apellido"></p>
                 </div>
                 <div class="campo-formulario">
                     <label for="fechaNacimiento">Fecha de nacimiento:</label>
-                    <input type="date" id="fechaNacimiento" required>
+                    <p id="fechaNacimiento"></p>
                 </div>
                 <div class="campo-formulario">
                     <label for="programaAcademico">Programa académico:</label>
-                    <input type="text" id="programaAcademico" required>
+                    <p id="programaAcademico"></p>
                 </div>
                 <div class="campo-formulario">
                     <label for="semestre">Semestre:</label>
-                    <input type="number" id="semestre" required>
+                    <p id="semestre"></p>
                 </div>
                 <div class="campo-formulario">
                     <label for="telefono">Número de teléfono:</label>
-                    <input type="text" id="telefono" required>
+                    <p id="telefono"></p>
                 </div>
                 <div class="campo-formulario">
                     <label for="correoInstitucional">Correo institucional:</label>
-                    <input type="email" id="correoInstitucional" required>
+                    <p id="correoInstitucional"></p>
                 </div>
-    
-                <!-- Contenedor para el botón Registrar -->
-                <div class="boton-container">
-                    <button type="submit">Registrar</button>
+                <div class="Editar-Perfil">
+                    <button type="button" id="Editar-Perfil">Editar Perfil</button>
                 </div>
+                
             </form>
         </section>
     </main>
     
-    
-            
-        </section>
-    </main>
     <footer> 
         <div class="contenedor-pie"> 
             <div class="pie-izquierda">
@@ -112,7 +101,7 @@
         </div> 
     </footer>
 
-    <script src="../../Js/registrar.js"></script>
+    <script src="../../Js/Mostrarperfiluser.js"></script>
     <script src="../../Js/mostrarol.js"></script>
 
 </body> 

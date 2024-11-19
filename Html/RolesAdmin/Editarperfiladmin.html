@@ -1,12 +1,85 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> 
+<html lang="es"> 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Editar Perfil Administrativo</title>
+    <title>AunarUP - Registrar</title> 
+    <link rel="stylesheet" href="../../Css/Editarperfiladmin.css"> 
+    <link rel="icon" href="https://campusvirtual.aunarvillavicencio.edu.co/pluginfile.php/1/core_admin/favicon/64x64/1718115488/ESCUDO%20INSTITUCIONAL-04%20%281%2950.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
 </head>
 <body>
-    <h2>Edita tu Perfil Administrativo</h2>
+    <header> <!-- Sección de encabezado -->
+        <div class="contenedor-cabecera"> <!-- Contenedor para la cabecera -->
+            <img src="../../Images/AunarUp-removebg-preview.png" alt="Logo AunarUp" class="logo-cabecera"> <!-- Logo de AunarUP -->
+            <div class="info-usuario"> <!-- Información dinámica del usuario -->
+                <span id="rol-usuario"></span> <!-- Espacio para el Rol del usuario -->
+                <span id="nombre-usuario"></span> <!-- Espacio para el Nombre y Apellido del usuario -->
+            </div>
+            <div class="enlaces-cabecera"> <!-- Sección de enlaces en la cabecera -->
+                <a href="javascript:void(0);" id="Regresar-al-panel">Regresar al Panel</a>
+            </div>
+        </div> <!-- Cierre del contenedor de la cabecera -->
+    </header>
+    <main class="contenedor-principal">
+        <section class="panel-gestion">
+            <h1>Panel de Gestión Estudiantil</h1>
+            <p>Gestiona tus actividades, consulta eventos y actualiza tu perfil. Mantente al día con tu progreso y participa activamente en la vida universitaria.</p>
+        </section>
+    
+        <section class="gestiones">
+            <a href="url_actividades.html" class="gestion-item gestion-item1">
+                <h2>Perfiles Estudiantes</h2>
+                <i class="fa-solid fa-user-edit fa-2x"></i>
+                <p>Gestiona perfiles Estudiantiles y visualiza información</p>
+            </a>
+    
+            <a href="url_eventos.html" class="gestion-item gestion-item2">
+                <h2>Ver Mi Perfil</h2>
+                <i class="fa-solid fa-user fa-2x"></i>
+                <p>Consulta y actualiza tu perfil administrativo.</p>
+            </a>
+    
+            <a href="./RolesUser/Verperfil.html" class="gestion-item gestion-item3">
+                <h2>Perfiles Administradores</h2>
+                <i class="fa-solid fa-cogs fa-2x"></i>
+                <p>Gestiona perfiles administrativos y visualiza información.</p>
+            </a>
+        </section>
+    </main>
+    
+    
+    <footer> 
+        <div class="contenedor-pie"> 
+            <div class="pie-izquierda">
+                <h2>Gestión de Puntos de Bienestar</h2> 
+                <p>Acumula y visualiza tus puntos de actividades universitarias.</p> 
+            </div>
+    
+            <div class="pie-derecha redes-sociales"> 
+                <div class="iconos"> 
+                    <a href="https://wa.me/3015406116" target="_blank"> 
+                        <i class="fab fa-whatsapp"></i> 
+                    </a>
+                    <a href="https://www.facebook.com/aunarvillavo" target="_blank"> 
+                        <i class="fab fa-facebook-f"></i> 
+                    </a>
+                    <a href="https://www.instagram.com/aunarvillavo" target="_blank"> 
+                        <i class="fab fa-instagram"></i> 
+                    </a>
+                    <a href="https://www.tiktok.com/@aunarvillavo" target="_blank"> 
+                        <i class="fab fa-tiktok"></i> 
+                    </a>
+                    <a href="https://github.com/Emerson-Mina" target="_blank"> 
+                        <i class="fab fa-github"></i> 
+                    </a>                    
+                </div> 
+            </div> 
+        </div> 
+    </footer>
 
-</body>
+    <script src="../../Js/Mostrarperfiluser.js"></script>
+    <script src="../../Js/mostrarol.js"></script>
+
+</body> 
 </html>

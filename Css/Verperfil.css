@@ -41,7 +41,7 @@ header {
 
 .enlaces-cabecera a {
     color: white; /* Color del texto del enlace */
-    font-size: 20px; /* Tamaño de la fuente del enlace */
+    font-size: 16px; /* Tamaño de la fuente del enlace */
     text-decoration: none; /* Sin subrayado en el enlace */
     font-weight: bold; /* Texto en negrita */
 }
@@ -49,77 +49,132 @@ header {
 .enlaces-cabecera a:hover {
     text-decoration: underline; /* Subrayar al pasar el ratón */
 }
-/* Contenedor principal */
-.contenedor-principal {
-    display: flex;
-    flex-direction: row; /* Alinear secciones horizontalmente */
-    justify-content: space-between; /* Espaciado uniforme */
-    align-items: flex-start;
-    padding: 5px;
-    gap: 20px;
-    max-width: 1100px;
-    margin: 0 auto; /* Centrar en la pantalla */
-    background-color: white; /* Fondo claro */
-}
-
-/* Contenedor de Noticias y Eventos */
-.contenedor-noticias, .contenedor-eventos {
-    background-color: #e0e7ff; /* Fondo blanco */
-    border-radius: 10px; /* Bordes redondeados */
-    width: 48%; /* Ocupan la mitad del espacio disponible */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
-    overflow: hidden;
-    height: 450px; /* Altura mínima */
-    margin-left: 1px;
-}
-
-/* Títulos */
-.titulo-noticias, .titulo-eventos {
-    background-color: #034873; /* Fondo azul */
-    padding: 10px 15px;
-    color: white; /* Texto blanco */
-    font-size: 22px;
-    font-weight: bold;
+/* Estilo para la información del usuario */
+.info-usuario {
     text-align: center;
-}
-
-/* Contenido */
-.contenido-noticias, .contenido-eventos {
-    padding: 1px;
-    text-align: center;
-    border: 2px solid #e0e7ff; /* Borde azul */
-}
-
-/* Imágenes */
-.imagen {
-    max-width: 55%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 15px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 1px;
-
-}
-.imagen:hover {
-    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra más fuerte */
-}
-/* Subtítulos */
-.contenido-noticias h3, .contenido-eventos h3 {
-    font-size: 20px;
-    color: #034873; /* Azul */
-    margin-bottom: 1px;
-
-}
-
-/* Párrafos */
-.contenido-noticias p, .contenido-eventos p {
+    flex-grow: 1; /* Permite que la información ocupe espacio en el centro */
     font-size: 16px;
-    color: #333;
-    line-height: 1.5;
-    padding: 2px;
+    font-weight: bold;
+    color: #fff; /* Cambié el color a blanco para destacar sobre el fondo azul */
+    display: flex;
+    flex-direction: column; /* Organizar los datos del usuario en columna */
+    align-items: center;
 }
 
+#nombre-usuario {
+    font-size: 18px; /* Tamaño de la fuente para el nombre */
+    color: #fff; /* Color del texto en blanco */
+}
+
+#rol-usuario {
+    font-size: 18px; /* Tamaño de la fuente para el rol */
+    color: #a1c0fa; /* Color para el rol */
+}
+/* Estilo general del contenedor principal */
+.contenedor-principal {
+    width: 100%;
+    min-height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: white;
+    padding-top: 5px;
+    padding-bottom: 4px;
+}
+
+/* Estilos para centrar solo el título de registro */
+.titulo-registro {
+    text-align: center;
+    margin-bottom: 5px;
+    color: #034873;
+    font-size: 40px;
+    font-weight: bold; /* Texto en negrita */
+}
+
+/* Estilo para el formulario */
+form {
+    width: 100%;
+    max-width: 1000px;
+    background-color: #e0e7ff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* Estilo para los campos de información */
+.campo-formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 22%;
+}
+
+/* Estilo para las etiquetas */
+.campo-formulario label {
+    font-size: 16px;
+    color: #034873;
+    font-weight: bold;
+}
+
+/* Estilo para los párrafos que mostrarán los datos */
+.campo-formulario p {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #333;
+    margin: 0;
+    word-wrap: break-word; /* Permite que el texto se ajuste */
+}
+
+/* Ajuste específico para el campo de correo institucional */
+.campo-formulario#correoInstitucional p {
+    width: 100%; /* Ajusta el ancho del campo al 100% del contenedor */
+    min-width: 300px; /* Asegura que el campo no sea demasiado pequeño */
+    max-width: 100%; /* Permite que el campo ocupe todo el ancho disponible */
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+}
+
+/* Ajustes generales para los párrafos */
+.campo-formulario p:hover {
+    background-color: #f5f5f5;
+}
+
+/* Hacemos que el botón ocupe su propia fila y lo centramos */
+.Editar-Perfil {
+    width: 100%; /* El contenedor del botón ocupa el 100% del formulario */
+    display: flex;
+    justify-content: center; /* Centra el botón horizontalmente */
+    margin-top: 20px; /* Espacio antes del botón */
+}
+
+/* Estilo para el botón */
+button {
+    padding: 14px;
+    width: 50%; /* El botón tiene un ancho fijo */
+    max-width: 340px; /* Limita el ancho máximo */
+    background-color: #034873;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #0272a3;
+}
+
+/* Estilo para las etiquetas */
+.campo-formulario label {
+    font-size: 16px;
+    color: #034873;
+    font-weight: bold;
+}
 /* Pie de página */
 footer {
     background-color: #034873; /* Color de fondo del pie de página */
@@ -141,10 +196,11 @@ footer {
     flex-direction: column;
     align-items: center; /* Centrar horizontalmente */
 }
+/* Aplicar negrita al título */
 .pie-izquierda h2 {
-    margin-left: 30px;
+    margin-left: 40px;
     font-weight: bold; /* Aplicar negrita */
-    margin-bottom: 1px; /* Espacio inferior para separar del párrafo */
+    margin-bottom: 10px; /* Espacio inferior para separar del párrafo */
 }
 /* Estilo para el párrafo */
 .pie-izquierda p {
@@ -156,8 +212,6 @@ footer {
     flex-direction: column; /* Colocar los elementos en columna */
     align-items: center; /* Centrar horizontalmente */
     width: 600px; /* Definir el ancho del contenedor, ajústalo según tus necesidades */
-    justify-content: center; /* Centrar verticalmente */
-
 }
 .redes-sociales a {
     color: white;
@@ -168,42 +222,4 @@ footer {
 .fab:hover {
     transform: scale(1.05); /* Escalar el ítem al hacer hover */
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Aumentar la sombra al hacer hover */
-}
-/* Estilos para móviles */
-@media (max-width: 768px) {
-    header {
-        height: 60px;
-    }
-
-    main.contenedor-principal {
-        padding: 15px; /* Reducir padding para móviles */
-    }
-
-    .contenedor-principal {
-        flex-direction: column; /* Los ítems de gestión se colocan en columna para móviles */
-        align-items: center;
-    }
-
-    .contenedor-eventos, .contenedor-noticias {
-        min-width: 100%; /* Los ítems de gestión ocupan el 100% del ancho del contenedor en móviles */
-    }
-
-    footer {
-        position: static; /* Evitar que el pie de página sea fijo en móviles */
-    }
-
-    .contenedor-pie {
-        flex-direction: column; /* Cambiar la dirección del pie de página a columna */
-        text-align: center;
-    }
-
-    .pie-derecha {
-        width: 100%; /* El pie de página ocupa el 100% en móviles */
-    }
-    .pie-izquierda p {
-        margin-left: 0px ; ;
-    }
-    .redes-sociales a {
-        font-size: 24px; /* Ajustar tamaño de iconos en móviles */
-    }
 }

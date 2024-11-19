@@ -14,7 +14,7 @@ body {
 }
 
 header {
-    background-color: #1e6af7; /* Color de fondo del encabezado */
+    background-color: #034873; /* Color de fondo del encabezado */
     height: 70px; /* Altura fija del encabezado */
     padding: 0 20px; /* Relleno lateral, sin relleno superior e inferior */
     display: flex; /* Usar flexbox para el layout */
@@ -39,7 +39,7 @@ header {
 
 .enlaces-cabecera a {
     color: white; /* Color del texto del enlace */
-    font-size: 16px; /* Tamaño de la fuente del enlace */
+    font-size: 20px; /* Tamaño de la fuente del enlace */
     text-decoration: none; /* Sin subrayado en el enlace */
     font-weight: bold; /* Texto en negrita */
 }
@@ -105,7 +105,7 @@ form {
 .seccion-derecha h2 {
     text-align: center; /* Centrar el texto del encabezado */
     font-size: 40px; /* Tamaño del encabezado */
-    color: #006de2; /* Color del texto del encabezado */    
+    color: #034873; /* Color del texto del encabezado */    
     margin-bottom: 10px; /* Espacio debajo del párrafo */
 
 }
@@ -113,7 +113,7 @@ form {
 .seccion-derecha p {
     text-align: center; /* Centrar el texto del encabezado */
     font-size: 15px; /* Tamaño del párrafo */
-    color: #4d87f3; /* Color del texto del párrafo */
+    color: #055585; /* Color del texto del párrafo */
     margin-bottom: 20px; /* Espacio debajo del párrafo */
     font-weight: bold; /* Texto en negrita */
 
@@ -144,7 +144,7 @@ input {
 
 button {
     padding: 12px 12px; /* Relleno del botón */
-    background-color: #007bff; /* Color de fondo */
+    background-color: #034873; /* Color de fondo */
     color: white; /* Color del texto */
     border: none; /* Sin borde */
     border-radius: 8px; /* Bordes redondeados */
@@ -170,7 +170,7 @@ button:hover {
 
 .contraseña-olvidada{
     font-size: 14px; /* Tamaño de la fuente del enlace */
-    color: #4d87f3; /* Color del texto del enlace */
+    color: #055585; /* Color del texto del enlace */
     text-decoration: none; /* Sin subrayado */
     font-weight: bold; /* Texto en negrita */
 
@@ -181,7 +181,7 @@ button:hover {
 }
 /* Pie de página */
 footer {
-    background-color: #1e6af7; /* Color de fondo del pie de página */
+    background-color: #034873; /* Color de fondo del pie de página */
     color: white; /* Color del texto del pie de página */
     padding: 10px 0;
     width: 100%;

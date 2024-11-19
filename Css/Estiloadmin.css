@@ -15,7 +15,7 @@ body {
 
 /* Estilos para el encabezado */
 header {
-    background-color: #1e6af7; /* Color de fondo del encabezado */
+    background-color: #034873; /* Color de fondo del encabezado */
     height: 70px; /* Altura fija del encabezado */
     padding: 0 20px; /* Relleno lateral, sin relleno superior e inferior */
     display: flex; /* Usar flexbox para el layout */
@@ -38,10 +38,30 @@ header {
     height: auto; /* Mantener proporción */
     padding: 4px;
 }
+/* Estilo para la información del usuario */
+.info-usuario {
+    text-align: center;
+    flex-grow: 1; /* Permite que la información ocupe espacio en el centro */
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff; /* Cambié el color a blanco para destacar sobre el fondo azul */
+    display: flex;
+    flex-direction: column; /* Organizar los datos del usuario en columna */
+    align-items: center;
+}
 
+#nombre-usuario {
+    font-size: 18px; /* Tamaño de la fuente para el nombre */
+    color: #fff; /* Color del texto en blanco */
+}
+
+#rol-usuario {
+    font-size: 18px; /* Tamaño de la fuente para el rol */
+    color: #a1c0fa; /* Color para el rol */
+}
 .enlaces-cabecera a {
     color: white; /* Color del texto del enlace */
-    font-size: 16px; /* Tamaño de la fuente del enlace */
+    font-size: 20px; /* Tamaño de la fuente del enlace */
     text-decoration: none; /* Sin subrayado en el enlace */
     font-weight: bold; /* Texto en negrita */
 }
@@ -64,8 +84,8 @@ main.contenedor-principal {
 
 main.contenedor-principal h1 {
     text-align: center; /* Centrar el texto del encabezado principal */
-    font-size: 2em; /* Tamaño de la fuente del título principal */
-    color: #1d4ed8; /* Color azul del título */
+    font-size: 40px; /* Tamaño de la fuente del enlace */
+    color: #034873; /* Color azul del título */
     margin-bottom: 0px; /* Espacio inferior ajustado para separación */
 }
 
@@ -145,7 +165,7 @@ main.contenedor-principal h1 {
     border: 2px solid #90cdf4; /* Añadir un borde sutil */
 }
 .gestion-item h2 {
-    color: #3498db; /* Color azul para los títulos de los ítems */
+    color: #034873; /* Color azul para los títulos de los ítems */
     margin-bottom: 10px; /* Espacio entre el título y el párrafo */
 }
 
@@ -155,14 +175,14 @@ main.contenedor-principal h1 {
 }
 
 .gestion-item i {
-    color: #2980b9; /* Color azul más oscuro para los íconos */
+    color: #034873; /* Color azul más oscuro para los íconos */
     margin: 15px 0; /* Espaciado de 15px arriba y abajo del ícono */
     font-size: 90px; /* Aumentar el tamaño del ícono a 90px */
 }
 
 /* Pie de página */
 footer {
-    background-color: #1e6af7; /* Color de fondo del pie de página */
+    background-color: #034873; /* Color de fondo del pie de página */
     color: white; /* Color del texto del pie de página */
     padding: 10px 0;
     width: 100%;
